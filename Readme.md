@@ -1,6 +1,20 @@
 # 📸 Viewer
 
-Welcome to the **Viewer** repository, where Hacktoberfest 2024 contributors are warmly invited to collaborate, learn, and build together! Whether you’re a beginner or a seasoned developer, there’s something here for you to explore. Let’s make this Hacktoberfest a memorable one! 🎉
+Welcome to the **Viewer** repository, where Hacktoberfest 2024 contributors are warmly invited to collaborate, learn, and build together! Whether you’re a beginner or a seasoned developer, there’s something here for you to explore. Let’s make this Hacktoberfest a memorable one! 🎉.
+
+---
+
+# 📊 Performance Metrics Tracker
+
+This repository implements a performance metrics tracking module for web applications, utilizing key metrics such as:
+
+- 🌐 **Cumulative Layout Shift (CLS)**
+- 🖼️ **First Contentful Paint (FCP)**
+- ⏱️ **First Input Delay (FID)**
+- 🏞️ **Largest Contentful Paint (LCP)**
+- 🚀 **Time to First Byte (TTFB)**
+
+The module leverages **PerformanceObserver** to monitor and report these metrics, enhancing user experience and optimizing application performance. ✨
 
 ---
 
@@ -22,7 +36,31 @@ Welcome to the **Viewer** repository, where Hacktoberfest 2024 contributors are 
    ```
    npm start
    ```
+---
+## Example
 
+Here’s a simple example of how to initialize the performance metrics tracking:
+
+```javascript
+import { getCLS, getFCP, getFID, getLCP, getTTFB } from './performanceMetrics';
+
+getCLS((metric) => {
+    console.log('Cumulative Layout Shift:', metric.value);
+});
+getFCP((metric) => {
+    console.log('First Contentful Paint:', metric.value);
+});
+getFID((metric) => {
+    console.log('First Input Delay:', metric.value);
+});
+getLCP((metric) => {
+    console.log('Largest Contentful Paint:', metric.value);
+});
+getTTFB((metric) => {
+    console.log('Time to First Byte:', metric.value);
+});
+  ```
+---
    ### 📌 Prerequisites
 - **Node.js** (v14 or higher)
 - **NPM** (v6 or higher)
