@@ -28,6 +28,7 @@ The module leverages **PerformanceObserver** to monitor and report these metrics
 2. **Clone** your forked version:  
    ```bash
    git clone https://github.com/your-username/viewer.git
+   cd .\viewer\
 3. **Install dependencies** to get started:
    ```
    npm install
